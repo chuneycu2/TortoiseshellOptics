@@ -1,0 +1,223 @@
+body {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.main-banner {
+  height: 30rem;
+  width: 100%;
+  background-image: url('../../resources/images/glasses-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo-bar {
+  background-color: cadetblue;
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+  position: relative;
+  top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-logo-bar {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin: 1rem 1rem 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 1rem 2rem 1rem 0;
+}
+
+.headline {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10rem;
+  left: 2rem;
+}
+
+.headline h1 {
+  background-color: white;
+  line-height: 2.4rem;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1.5rem 5rem;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.service {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Helvetica;
+}
+
+.service.exams img {
+  width: 3.5rem;
+}
+
+.service.fittings {
+  margin: 0 6rem;
+}
+
+.service img {
+  width: 5rem;
+}
+
+.service p {
+  text-align: center;
+}
+
+.business-info {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  max-width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.title {
+  background-color: cadetblue;
+  max-width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.title p {
+  padding: 0.5rem 1.25rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  padding: 4rem 1rem 4rem 4rem;
+  height: 1.5rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+  .main-banner {
+    height: 22rem;
+  }
+  .logo-bar {
+    top: 0;
+  }
+  .headline {
+    left: -2rem;
+    margin-top: 5rem;
+  }
+  .headline h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 100%;
+  }
+  .main-banner {
+    height: 17rem;
+  }
+  .logo-bar {
+    display: none;
+  }
+  .mobile-logo-bar {
+    display: block;
+    background-color: cadetblue;
+    font-family: Helvetica;
+    font-size: 1rem;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .headline {
+    left: 0;
+    margin-top: 9rem;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+  }
+  .headline h1 {
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .service {
+    padding: 3.77rem 0;
+    font-family: Helvetica;
+    font-size: 0.77rem;
+  }
+  .business-info {
+    flex-direction: column;
+    width: 100%;
+  }
+  .info {
+    max-width: 100%;
+    width: 100%;
+  }
+  .title {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .info p {
+    margin: 1rem 0.5rem;
+  }
+  footer img {
+    margin: 0 auto;
+  }
+  footer span {
+    display: none;
+  }
+}
